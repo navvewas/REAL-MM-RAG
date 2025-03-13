@@ -86,6 +86,14 @@
     .image-item:hover {
       opacity: 1; /* Full visibility on hover */
     }
+
+    /* Resized Images */
+    .resized-image {
+      max-width: 70%;  /* Limits images to 70% width */
+      height: auto;
+      display: block;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
@@ -131,7 +139,7 @@
 
     <!-- First Figure: Proposed Benchmark -->
     <h3>Proposed Real-MM-RAG Benchmark</h3>
-    <img class="example-container" src="figures/Figure_1.jpg" alt="REAL-MM-RAG Benchmark">
+    <img class="resized-image" src="figures/Figure_1.jpg" alt="REAL-MM-RAG Benchmark">
 
     <br>
 
@@ -157,11 +165,9 @@
 
     <!-- Second Figure: Benchmark Construction Pipeline -->
     <h3>Benchmark Construction Pipeline</h3>
-    <img class="example-container" src="figures/Data_generation_pipeline.jpg" alt="Benchmark Construction Pipeline">
+    <img class="resized-image" src="figures/Data_generation_pipeline.jpg" alt="Benchmark Construction Pipeline">
 
     <br>
-
-
   </div>
 </body>
 </html>
