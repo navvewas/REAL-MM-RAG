@@ -69,21 +69,23 @@
         font-weight: bold;
     }
     .bibtex-container {
-        width: 70%;
-        margin: auto;
-        text-align: left;
+        max-width: 70%; /* Matches images and text width */
+        margin: auto; /* Centers the section */
+        text-align: left; /* Ensures text is aligned properly */
     }
 
     .bibtex-code {
         background-color: #f4f4f4;
-        padding: 10px;
+        padding: 15px;
         font-family: monospace;
         font-size: 14px;
         border-radius: 5px;
         overflow-x: auto;
-        white-space: pre-wrap;
+        white-space: pre-wrap; /* Ensures it wraps properly */
         word-wrap: break-word;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     }
+
 
     h2 {
       font-family: 'Google Sans', sans-serif;
