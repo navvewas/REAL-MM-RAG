@@ -88,11 +88,20 @@
     }
 
     /* Resized Images */
+    /* Ensures images are properly sized and background blends */
     .resized-image {
-      max-width: 70%;  /* Limits images to 70% width */
-      height: auto;
-      display: block;
-      margin: auto;
+    max-width: 70%;  /* Ensures images do not stretch too much */
+    height: auto;
+    display: block;
+    margin: auto;
+    background: transparent; /* Removes white background effect */
+    }
+
+    /* Ensures text width matches image width */
+    .limited-width {
+    max-width: 70%;  /* Same as images */
+    margin: auto;
+    text-align: justify;
     }
   </style>
 </head>
