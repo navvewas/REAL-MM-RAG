@@ -199,9 +199,15 @@
     <!-- Second Figure: Benchmark Construction Pipeline -->
     <h3 class="section-title">Benchmark Construction Pipeline</h3>
     <img class="resized-image" src="figures/Data_generation_pipeline.png" alt="Benchmark Construction Pipeline">
+    <p>
+        Manually creating high-quality benchmarks is time-consuming and error-prone. To address this, we introduce an <b>automated pipeline</b> for generating and verifying queries tailored for <b>Retrieval-Augmented Generation (RAG) evaluation</b>. Our benchmark focuses on <b>long documents</b> with multiple pages from the same sub-domain, ensuring <b>realistic retrieval challenges</b>. The process begins with query generation using a Vision-Language Model (VLM) to create natural user-like questions. These queries are then verified by a Large Language Model (LLM) to filter out those that are too broad, overly specific, or reference exact page locations. To enhance robustness, queries undergo <b>multi-level rephrasing</b> to reduce reliance on exact wording while preserving meaning. Finally, a false negative verification step ensures each query is correctly linked to its relevant pages, preventing errors and filtering out ambiguous cases. The result is a high-quality dataset of document pages, queries, and corresponding answers, designed for robust RAG evaluation.
+    </p>
+    
+
+
 
     <h3 class="section-title">Document Retrieval Benchmarks Comparison</h3>
-    <img class="resized-image" src="figures/Benchmarks_Comparison.png" alt="Benchmark Construction Pipeline">
+    <img class="resized-image" src="figures/table.png" alt="Benchmark Construction Pipeline">
 
 
     <br>
