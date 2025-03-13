@@ -218,9 +218,26 @@
     <div class="image-container">
       <img class="resized-image transparent-bg" src="figures/table.png" alt="Benchmark Table">
     </div>
-    
-
+    <p class="limited-width">
+        Existing benchmarks lack essential properties for effective multi-modal retrieval evaluation. Most rely on <b>short documents with limited sub-domain coverage</b>, making retrieval too easy. Our benchmark addresses this by using <b>long documents with extensive sub-domain coverage</b>, ensuring the presence of many similar pages within the benchmark. We further enhance difficulty with <b>multi-level query rephrasing</b>, preventing keyword-based retrieval and promoting true semantic understanding. Unlike most existing benchmarks that use <b>QA-derived queries</b>, which are not suited for RAG, we ensure queries resemble real user inquiries through a dedicated <b>generation and filtering pipeline</b>. Finally, to combat the high false-negative rates—shown to be significant in prior benchmarks—we employ a <b>VLM-based verification</b> process for accurate labeling. The table highlights these improvements, making our benchmark the most reliable for real-world RAG evaluation.
+    </p>
     <br>
   </div>
+
+  <div class="bibtex-container">
+    <h3 class="section-title">BibTeX</h3>
+    <pre class="bibtex-code">
+        @misc{wasserman2025realmmragrealworldmultimodalretrieval,
+                title={REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark}, 
+                author={Navve Wasserman and Roi Pony and Oshri Naparstek and Adi Raz Goldfarb and Eli Schwartz and Udi Barzelay and Leonid Karlinsky},
+                year={2025},
+                eprint={2502.12342},
+                archivePrefix={arXiv},
+                primaryClass={cs.IR},
+                url={https://arxiv.org/abs/2502.12342}, 
+        }
+    </pre>
+  </div>
+  
 </body>
 </html>
