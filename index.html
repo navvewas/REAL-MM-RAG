@@ -159,10 +159,14 @@
     }
     @media (max-width: 768px) {
       .limited-width {
+          max-width: 100%;  /* Same as images */
           font-size: 0.85rem; /* Slightly larger text for better readability */
           line-height: 1.4;
       }
-
+      .section-title {
+          font-size: 18px; /* Much smaller section titles on mobile */
+          margin-bottom: 10px;
+      }
       .resized-image, .resized-image_2 {
           max-width: 100%; /* Allow images to take full width on small screens */
           height: auto; /* Maintain aspect ratio */
