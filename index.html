@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&display=swap">
   <link rel="icon" href="buttons/web_logo3.png">
+  
   <style>
     body {
       background-color: rgb(245, 245, 245);
@@ -56,50 +57,77 @@
       margin-bottom: -16px;
     }
 
+    /* Buttons Section */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between buttons */
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .image-item {
+      text-align: center;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .image-item img {
+      max-width: 40px; /* Match reference size */
+      height: auto;
+    }
+
+    .image-title {
+      font-size: 16px;
+      color: black;
+      margin-top: 5px;
+    }
+
+    .image-item:hover {
+      opacity: 1; /* Full visibility on hover */
+    }
   </style>
 </head>
 <body>
-    <div class="main-container">
-      <h1>REAL-MM-RAG</h1>
-      <br>
-      <h2>A Real-World Multi-Modal Retrieval Benchmark</h2>
-      <p class="author-links">
-        <a href="mailto:navve.wasserman@weizmann.ac.il">Navve Wasserman<sup>1,2</sup></a> &nbsp;&nbsp; 
-        <a href="mailto:roi.pony@ibm.com">Roi Pony<sup>1</sup></a> &nbsp;&nbsp; 
-        <a href="mailto:oshri.naparstek@ibm.com">Oshri Naparstek<sup>1</sup></a> &nbsp;&nbsp; 
-        <a href="mailto:adi.raz@ibm.com">Adi Raz Goldfarb<sup>1</sup></a> &nbsp;&nbsp; 
-        <a href="mailto:eli.schwartz@ibm.com">Eli Schwartz<sup>1</sup></a> &nbsp;&nbsp; 
-        <a href="mailto:udi.barzelay@ibm.com">Udi Barzelay<sup>1</sup></a> &nbsp;&nbsp; 
-        <a href="mailto:leonid.karlinsky@ibm.com">Leonid Karlinsky<sup>1</sup></a>
-      </p>
-      <p class="institute"><sup>1</sup>IBM Research Israel &nbsp;&nbsp; <sup>2</sup>Weizmann Institute of Science</p>
-      <br>
-  
-      <!-- Buttons Section -->
-      <div class="image-container">
-        <a href="https://arxiv.org/abs/2502.12342">
-          <div class="image-item">
-            <img src="buttons/paper.jpg" alt="Paper">
-            <p class="image-title">Paper</p>
-          </div>
-        </a>
-        <a href="https://github.com/navvewas/REAL-MM-RAG-Benchmark">
-          <div class="image-item">
-            <img src="buttons/dataset.png" alt="Benchmark">
-            <p class="image-title">Benchmark</p>
-          </div>
-        </a>
-        <a href="https://github.com/navvewas/REAL-MM-RAG-FinTrainSet">
-          <div class="image-item">
-            <img src="buttons/dataset.png" alt="FinTrainSet">
-            <p class="image-title">FinTrainSet</p>
-          </div>
-        </a>
-      </div>
-  
-      <br>
-    </div>
-  </body>
-    
+  <div class="main-container">
+    <h1>REAL-MM-RAG</h1>
+    <br>
+    <h2>A Real-World Multi-Modal Retrieval Benchmark</h2>
+    <p class="author-links">
+      <a href="mailto:navve.wasserman@weizmann.ac.il">Navve Wasserman<sup>1,2</sup></a> &nbsp;&nbsp; 
+      <a href="mailto:roi.pony@ibm.com">Roi Pony<sup>1</sup></a> &nbsp;&nbsp; 
+      <a href="mailto:oshri.naparstek@ibm.com">Oshri Naparstek<sup>1</sup></a> &nbsp;&nbsp; 
+      <a href="mailto:adi.raz@ibm.com">Adi Raz Goldfarb<sup>1</sup></a> &nbsp;&nbsp; 
+      <a href="mailto:eli.schwartz@ibm.com">Eli Schwartz<sup>1</sup></a> &nbsp;&nbsp; 
+      <a href="mailto:udi.barzelay@ibm.com">Udi Barzelay<sup>1</sup></a> &nbsp;&nbsp; 
+      <a href="mailto:leonid.karlinsky@ibm.com">Leonid Karlinsky<sup>1</sup></a>
+    </p>
+    <p class="institute"><sup>1</sup>IBM Research Israel &nbsp;&nbsp; <sup>2</sup>Weizmann Institute of Science</p>
+    <br>
 
+    <!-- Buttons Section -->
+    <div class="image-container">
+      <a href="https://arxiv.org/abs/2502.12342">
+        <div class="image-item">
+          <img src="buttons/paper.jpg" alt="Paper">
+          <p class="image-title">Paper</p>
+        </div>
+      </a>
+      <a href="https://github.com/navvewas/REAL-MM-RAG-Benchmark">
+        <div class="image-item">
+          <img src="buttons/dataset.png" alt="Benchmark">
+          <p class="image-title">Benchmark</p>
+        </div>
+      </a>
+      <a href="https://github.com/navvewas/REAL-MM-RAG-FinTrainSet">
+        <div class="image-item">
+          <img src="buttons/dataset.png" alt="FinTrainSet">
+          <p class="image-title">FinTrainSet</p>
+        </div>
+      </a>
+    </div>
+
+    <br>
+  </div>
+</body>
 </html>
