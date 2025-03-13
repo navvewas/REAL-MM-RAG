@@ -137,22 +137,26 @@
 
     /* Resized Images */
     /* Ensures images are properly sized and background blends */
-    .resized-image, .resized-image_2 {
-    max-width: 100%; /* Allow images to scale dynamically */
+    .resized-image {
+    max-width: 70%;  /* Ensures images do not stretch too much */
     height: auto;
     display: block;
     margin: auto;
+    background: transparent; /* Removes white background effect */
+    }
+    .resized-image_2 {
+    max-width: 45%;  /* Ensures images do not stretch too much */
+    height: auto;
+    display: block;
+    margin: auto;
+    background: transparent; /* Removes white background effect */
     }
     /* Ensures text width matches image width */
     .limited-width {
-    max-width: 900px; /* Wider on desktop */
-    width: 90%; /* Use more screen space on mobile */
+    max-width: 70%;  /* Same as images */
     margin: auto;
     text-align: justify;
-    font-size: 1rem;
-    line-height: 1.6;
     }
-
   </style>
 </head>
 <body>
