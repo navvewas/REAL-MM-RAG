@@ -141,14 +141,14 @@
     /* Resized Images */
     /* Ensures images are properly sized and background blends */
     .resized-image {
-    max-width: 70%;  /* Ensures images do not stretch too much */
+    max-width: 90%;  /* Ensures images do not stretch too much */
     height: auto;
     display: block;
     margin: auto;
     background: transparent; /* Removes white background effect */
     }
     .resized-image_2 {
-    max-width: 45%;  /* Ensures images do not stretch too much */
+    max-width: 70%;  /* Ensures images do not stretch too much */
     height: auto;
     display: block;
     margin: auto;
@@ -156,15 +156,18 @@
     }
     /* Ensures text width matches image width */
     .limited-width {
-    max-width: 70%;  /* Same as images */
+    max-width: 90%;  /* Same as images */
     margin: auto;
     text-align: justify;
+    margin: 10px auto 0 auto; /* top margin only */
+
     }
     @media (max-width: 768px) {
       .limited-width {
           max-width: 100%;  /* Same as images */
           font-size: 0.55rem; /* Slightly larger text for better readability */
           line-height: 1.2;
+          margin: 10px auto 0 auto; /* top margin only */
       }
       .section-title {
           font-size: 14px; /* Much smaller section titles on mobile */
